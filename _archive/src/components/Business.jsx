@@ -14,9 +14,9 @@ const Business = () => {
       <div>{businessData.city}</div>
       <div>{businessData.state}</div>
       <div>{businessData.zipCode}</div>
-      <div>{businessData.category}</div>
-      <div>{businessData.rating}</div>
-      <div>{businessData.reviewCount}</div>
+      <h3>{businessData.category.toUpperCase()}</h3>
+      <h3>{`${businessData.rating} stars`}</h3>
+      <p>{`${businessData.reviewCount} reviews`}</p>
     </div>
   );
 };
